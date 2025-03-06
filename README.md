@@ -2,7 +2,8 @@
 
 **GitHub Repo:** https://github.com/antoninast/module-10-challenge-employee-tracker
 
-**Video Link:** To be added soon
+**Video Link:** https://drive.google.com/file/d/1aYySE6cPaWbQGN9vjpoTbbhA3kRSIEl8/view?usp=sharing
+
 
 ## Description
 The Business Management CLI Application allows business owners to manage and organize their company's departments, roles, and employees. This application provides a command-line interface (CLI) where users can:

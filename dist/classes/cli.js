@@ -411,22 +411,6 @@ class Cli {
         });
         this.startCli();
     }
-    // viewEmployeesByDepartment() {
-    //   pool.query(
-    //     `SELECT first_name, last_name, role_id
-    //     FROM employee
-    //     GROUP BY _id`,
-    //     (err: Error, result: QueryResult) => {
-    //       if (err) {
-    //         console.log(err);
-    //       } else if (result) {
-    //         console.log('- - - R E S U L T - - -');
-    //         console.table(result.rows);
-    //       }
-    //     }
-    //   );
-    //   this.startCli();
-    // }
     deleteDepartment() {
         const departments = this.getAllDepartments().departments;
         setTimeout(() => {
@@ -524,12 +508,6 @@ class Cli {
         }, 1000);
     }
     viewCombinedSalariesByDepartment() {
-        const query = `SELECT d.name AS department,
-       SUM(r.salary) AS total_salary
-        FROM department d
-        JOIN role r ON d.id = r.department_id
-        GROUP BY d.name;
-        `;
         pool.query(`SELECT d.name AS department,
       SUM(r.salary) AS total_salary
       FROM department d
