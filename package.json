@@ -1,0 +1,35 @@
+{
+  "name": "employee-tracker",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoninast/module-10-challenge-employee-tracker.git"
+  },
+  "author": "Antonina Stancheva @ Columbia Engineering Bootcamp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoninast/module-10-challenge-employee-tracker/issues"
+  },
+  "homepage": "https://github.com/antoninast/module-10-challenge-employee-tracker#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1",
+    "inquirer": "^8.2.4",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.12.7",
+    "@types/pg": "^8.11.6",
+    "typescript": "^5.2.2"
+  }
+}
